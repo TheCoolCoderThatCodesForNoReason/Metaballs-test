@@ -1,3 +1,5 @@
+alert("If you have a crappy laptop, please make the browser window smaller, it will lag for you.");
+
 let r = 50,
   val,
   grid = [],
