@@ -4,7 +4,7 @@ let r = 50,
   val,
   grid = [],
   circles = [];
-let num = 10;
+let num = 5;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   for (let i = 0; i < width; i++) {
@@ -17,6 +17,7 @@ function setup() {
     circles[i] = new Circle();
   }
 }
+
 function draw() {
   loadPixels();
   for (let i = 0; i < width; i++) {
@@ -31,8 +32,8 @@ function draw() {
       grid[i][j] = val;
       let v = val * 255;
       let index = 4 * (i + j * width);
-      pixels[index + 0] = v;
-      pixels[index + 1] = v;
+      pixels[index + 0] = 0;
+      pixels[index + 1] = 0;
       pixels[index + 2] = v;
       pixels[index + 3] = 255;
     }
